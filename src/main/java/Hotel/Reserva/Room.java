@@ -33,7 +33,7 @@ public class Room implements Serializable {
     private String Description;
     
     @ManyToOne
-    @JoinColumn(name="CategoryId")
+    @JoinColumn(name="categoryId")
     @JsonIgnoreProperties("Rooms")
     private Category category;
     
